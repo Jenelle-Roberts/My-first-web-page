@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <h1>My goals for the year</h1>
+    <nav aria-label="primary-navigation">
+        <ul>
+            <li>
+                <a href="#html">Learning Html</a>
+               
+            </li>
+            <li>
+                <a href="#vacation">Planning a vacation</a>
+            </li>
+            <li>
+                <a href="#contact">Contact me</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    <hr>
+    <main>
+    <article id="html">
+    <h2>I'm ready to learn html</h2>
+    <p>This is my first webpage</p>
+    <section>
+        <h3>HTML5</h3>
+    <img src="img/Computer.jpg" alt="a computer screen" title="Computer screen" width="400" height="225">
+    <figure>
+        <figcaption>An example of HtML5 code</figcaption>
+        <p><code>&lt;h1&gt;Hello world &lt;/h1 &gt;</code></p>
+    </figure>
+    </section>
+    <section>
+    <h3>My daily schedule</h3>
+    <p>Let me tell you how :
+        <ol>
+        <li>....I learn how i learn web dev</li>
+       <li>....I plan out my schedule</li>
+       <li>....I use resources from  <abbr title="Mozilla Developer Network"> <a href="https://developer.mozilla.org/en-US/">MDN</a></abbr></li>
+       </ol> 
+       <aside>
+        <details>
+            <summary>
+                Guesss the <mark>
+                 no of  hours I code per day</mark>
+            </summary>
+            <p>I start at  <time datetime="08:00">8am</time> and write code for <time datetime="PT3H"> three hours</time>    every morning</p>
+        </details>
+       </aside>
+   <br>
+   <table>
+    <caption>My Daily schedule</caption>
+    <thead>
+        <tr>
+            <th>Time</th>
+            <th>Activity</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>Morning</th>
+        <td>
+            <time datetime="08:00">8am</time>
+            <time datetime="11:00">11:am</time>
+        </td>
+        <td>Write code</td>
+    </tr>
+    <tr>
+        <th>Break</th>
+        <td>
+            <time datetime="01:00">11am</time>
+            <time datetime="12:00">12pm</time>
+        </td>
+        <td>Eat lunch</td>
+    </tr>
+    <tr>
+        <th>Afternoon</th>
+        <td>
+            <time datetime="12:00">12pm</time>
+            <time datetime="17:00">5pm</time>
+        </td>
+        <td>UI/UX design</td>
+    </tr>
+    <tr>
+        <th>Evening</th>
+        <td rowspan="2">All other time</td>
+        <td>Free time</td>
+    </tr>
+    <tr>
+        <th>Night</th>
+        <td>sleep</td>
+    </tr>
+</tbody>
+<tfoot>
+    <tr>
+        <td colspan="3">And that's what I do everyday,Just eat sleep and recharge!</td>
+    </tr>
+</tfoot>
+   </table>
+   </article>
+</section>
+
+    <hr>
+    <article id="vacation"></section>
+    <h2>I'm  also planning a vacation</h2>
+    <p>I've been working  hard and   <em>really need a getaway</em></p>
+    <p>I live in Nyeri so I want to visit a desert</p>
+    <h3>Places I'd like to visit</h3>
+    <ul>
+     <li><p>I've heard good thing  about Northern Kenya</p>
+        <figure>
+    <img src="img/desert3.jpg" alt="Kenyan desert" width="400" height="225" loading="lazy">
+    <figcaption>
+        Northern Kenya Desert
+    </figcaption>
+</figure></li>
+   <li> <p>I've heard good things about going here:</p></li>
+</ul>
+    <address>
+        Floating sands Island <br>
+        Northern Turkana <br>
+        Oldonyo Lengai <br>
+        Volcanic Island, Turkana 7750<br>
+    </address>
+<figure>
+    <img src="img/desert2.jpg" alt="desert image" width="400" height="225" loading="lazy">
+    <figcaption>A trip in the desert</figcaption>
+</figure>
+</article>
+
+
+
+    <section>
+    <h2>Places I'd like to avoid</h2>
+    <dl>
+    <dt> North Pole</dt>
+    <dd> I hear this is <strong>cold!</strong></dd>
+    <dt>South Pole</dt>
+    <dd>This is also cold</dd>
+    <dt>Mountain tops</dt>
+    <dd>These are also cold</dd>
+   </dl>
+</section>
+<hr>
+<article id="contact">
+    <h2>Contact me</h2>
+    <p>I'd really like to hear from you</p>
+    <form action="htttps://httpbin.org/get" method="get">
+        <fieldset>
+            <legend>
+       <p>
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required >
+       </p>
+       <p>
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required >
+       </p>
+       <p>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Your secret"  required >
+       </p>
+       <p>
+        <label for="phone">phone</label>
+        <input type="tel" name="phone" id="phone" placeholder="555555555"  required >
+       </p>
+       <p>
+        <label for="decade"> favorite decade</label>
+        <input type="number" name="decade" id="decade"min="1950" max="2030" step="10" value="1980">
+       </p>
+       <p>
+        <label for="favoritecoffee"> Favorite coffee</label>
+           <select name="coffee" id="coffee" multiple >
+            <optgroup label="coffees">
+            <option value="regular coffee">Regular Coffe</option>
+            <option value="iced coffee" selected>Iced Coffee</option>
+        </optgroup>
+        <optgroup label="Espresso Drinks">
+            <option value="latte">Latte</option>
+            <option value="capuccino">capuccino</option>
+            <option value="cortado">cortado</option>
+            <option value="americano">Americano</option>
+        </optgroup>
+
+            <option value="other">other</option>
+       
+           </select>
+        
+       </p>
+    </legend>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>
+            What is your favorite food?
+        </legend>
+        <p>
+            <input type="radio" name="food" id="tacos">
+            <label for="tacos">Tacos</label>
+        </p>
+        <p>
+            <input type="radio" name="food" id="pizza">
+            <label for="tacos">Pizza</label>
+        </p>
+        <p>
+            <input type="radio" name="food" id="sushi">
+            <label for="sushi">sushi</label>
+        </p>
+    </fieldset>
+    </form>
+</article>
+</main>
+<hr>
+
+<footer>
+    &lt;&lt;&lt;&copy; <a href="about.html">Jenelica Macharia</a> &gt; &gt; &gt;
+    <p><a href="#">BACK TO TOP</a></p>
+</footer>
+</body>
+</html>
